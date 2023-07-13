@@ -68,6 +68,8 @@ main .container{
     max-width: 1110px;
 }
 .planets svg{
+   width: 350px;
+   height: 350px;
     display: none;
 }
 .planate_name p{
