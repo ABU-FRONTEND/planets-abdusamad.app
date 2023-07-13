@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio&family=League+Spartan:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    background-color:#070724;
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+header{
+    width: 100%;
+}
+.header_content{
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    padding: 27px 16px;
+    opacity: 0.75;
+}
+nav ul li a.active{
+    border-bottom: 5px solid #419EBB;
+    opacity: 1;
+    transition: 0.5s;   
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: 'League Spartan', sans-serif;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+header .header_name h1{
+    font-family: Antonio;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: -1.05px;
+    text-transform: uppercase;
+}
+main{
+    width: 100%;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    opacity: 0.20000000298023224;
+}
+main .container{
+    padding-right: 20px; 
+    padding-left: 20px;
+    padding-top: 100px;
+    margin: 0 auto;
+    max-width: 1110px;
+}
+.planets svg{
+    display: none;
+}
+.planate_name p{
+    padding-bottom: 23px;
+    display: none;
+    color: #FFF;
+    font-family: Antonio;
+    font-size: 80px;
+    text-transform: uppercase;
+}
+.burger{
+    display: none;
+}
+.planate_name p.show{
+    display: block;
+}
+.planets{
+    max-width: 760px;
+    margin: 0 auto;
+}
+.planets svg.active{
+    display: block;
+}
+.planets_apparence_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.planets_apparence_info .planets_info{
+    max-width: 650px;
+}
+.planets_apparence_info .planet_info p{
+    max-width: 350px;
+    display: none;
+    color: #FFF;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    padding-bottom: 24px;
+}
+.planets_apparence_info .planet_info p.seek{
+    display: block;
+}
+.more_information span{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    opacity: 0.5;
+}
+.more_information span a{
+    color: aqua;
+}
+.appearances{
+    padding-top: 39px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.first_appearances, .second_appearances, .third_appearances{
+    display: flex;
+    max-width: 100%;
+    border: 1px solid white;
+    padding: 12px 12px 12px 28px;
+    column-gap: 18px;
+    transition: 0.7s;
+}
+.first_appearances:hover, .second_appearances:hover, .third_appearances:hover{
+    background: #D8D8D8;
+    border: none;
+    transition: 0.7s;
+}
+.first_appearances span, .second_appearances span, .third_appearances span{
+    font-size: 12px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2.571px;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+.first_appearances p, .second_appearances p, .third_appearances p{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2.571px;
+    text-transform: uppercase;
+}
+.planets_date{
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+ .planet_rotation p,  .planet_revolution p, .planet_radius p, .planet_average p{
+    display: none;
+    font-family: Antonio;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+}
+ .planet_rotation span,  .planet_revolution span, .planet_radius span, .planet_average span{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 11px;
+    opacity: 0.5;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+ .planet_rotation p.active,  .planet_revolution p.active,  .planet_radius p.active, .planet_average p.active{
+    display: block;
+}
+.planets_date div{
+    width: 255px;
+    padding: 20px 0 27px 23px;
+    border: 1px solid white;
+}
+@media only screen and (max-width: 950px){
+    .header_content{
+        padding-top: 20px;
+        flex-direction: column;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+    }
+    .planate_name p{
+        font-size: 48px;
+    }
+    .planets svg{
+        width: 200px;
+        height: 200px;
+    }
+
+    .container{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .planets_apparence_info{
+    flex-direction: column;
+    }
+    .planets_info{
+        padding-top: 130px;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 39px;
+    }
+    .planets_apparence_info .planet_info p{
+        font-size: 11px;
+    }
+    .planets_date div{
+        width: 164px;
+        padding: 16px;
+    }
+    .planet_rotation p,  .planet_revolution p, .planet_radius p, .planet_average p{
+        font-size: 24px;
+    }
+    .planet_rotation span,  .planet_revolution span, .planet_radius span, .planet_average span{
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width: 650px){
+    nav{
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        z-index: 2;
+        background: #070724;
+    }
+    nav.active{
+        display: block;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    .header_content{
+        flex-direction: row;
+    }
+    .burger{
+        display: block;
+    }
+    .planets_info{
+        flex-direction: column;
+        text-align: center;
+    }
+    .planets_date{
+        row-gap: 20px;
+        flex-direction: column;
+    }
+    .planets_date div{
+        width: 100%;
+    }
+}
