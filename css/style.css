@@ -32,7 +32,6 @@ nav ul li{
     opacity: 0.75;
 }
 nav ul li a.active{
-    border-bottom: 5px solid #419EBB;
     opacity: 1;
     transition: 0.5s;   
 }
@@ -43,6 +42,12 @@ nav ul li a{
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
+}
+.burger {
+   display: none;
+}
+.burger.active{
+   opacity: 0.5;
 }
 header .header_name h1{
     font-family: Antonio;
@@ -80,9 +85,7 @@ main .container{
     font-size: 80px;
     text-transform: uppercase;
 }
-.burger{
-    display: none;
-}
+
 .planate_name p.show{
     display: block;
 }
@@ -249,6 +252,18 @@ main .container{
     }
     nav ul{
         flex-direction: column;
+    }
+    nav ul li{
+      height: 40px;
+      width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ffffff1a;
+   }
+    nav ul li::before{
+      content: url(../img/left-arrow.svg);
     }
     nav ul li a{
         font-size: 20px;
